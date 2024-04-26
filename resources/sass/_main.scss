@@ -1,0 +1,66 @@
+.text-site-light{
+    color: #717CFF!important;
+}
+.btn-bg-light{
+    background:  #717CFF;
+}
+.btn-bg-dark{
+    background: #030812;
+}
+.btn-bg-secondary{
+    background: #3C485D;
+}
+.btn-radius{
+    border-radius: 24px;
+}
+.radius{
+    border-radius: 24px;
+}
+.btn-purple{
+    border-color: #717CFF;
+
+}
+.text-site-gradient{
+    color: #717CFF!important;
+}
+.bg-site-image{
+    height: 90dvh;
+    background-image: url("../images/Image.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.title h2{
+    font-size: 55px;
+}
+.bg-card{
+    background: rgba(53, 57, 65, 0.41)!important;
+}
+.icons .fa-heart{
+    cursor: pointer;
+}
+.header-title{
+    font-size: 48px;
+}
+.header-description{
+    font-size: 20px;
+}
+.swiper-pagination{
+    background-color: white;
+
+}
+.like-button{
+    cursor: pointer;
+}
+.collections .images img{
+    height: 25dvh;
+    object-fit: cover;
+}
+@media screen and (max-width: 992px) {
+    .bg-site-image{
+        background-size: 100%;
+        background-position: top;
+    }
+    .title h2{
+        font-size: 40px;
+    }
+}
