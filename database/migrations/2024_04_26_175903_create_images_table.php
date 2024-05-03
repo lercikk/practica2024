@@ -11,20 +11,22 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('news', function (Blueprint $table) {
+        Schema::create('images', function (Blueprint $table) {
             $table->id();
-        $table->string('description'); 
-        $table->unsignedBigInteger('user_id');
-        $table->foreign('user_id')->references('id')->on('users');
-        $table->timestamps();
+            $table->string('name');
+            $table->unsignedBigInteger('news_id'); 
+            $table->foreign('news_id')->references('id')->on('news'); 
+            $table->timestamps();
         });
     }
+    
+
 
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('news');
+        Schema::dropIfExists('images');
     }
 };

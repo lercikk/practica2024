@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\News;
 use Illuminate\Http\Request;
+use App\Models\Image;
+
 
 class NewsController extends Controller
 {
@@ -12,7 +14,8 @@ class NewsController extends Controller
      */
     public function index()
     {
-        //
+        $news = News::all();
+        return view('news.index', ['news' => $news]);
     }
 
     /**
@@ -20,7 +23,8 @@ class NewsController extends Controller
      */
     public function create()
     {
-        //
+        return view('news.create');
+
     }
 
     /**
@@ -28,8 +32,21 @@ class NewsController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        $new = new News();
+        $new->description = $request->description;
+        $new->user_id = auth()->id();
+        $new->save();
+        $id = $new->id;
+        foreach ($request->images as $file){
+            $extension  = $file->getClientOriginalExtension();
+            $image = new Image();
+            $image->news_id = $id;
+            $image->name = md5(bcrypt(date('l jS \of F Y h:i:s A'))).'.'.$extension;
+            $file->move(public_path(env('UPLOADS_IMAGE')), $image->name);
+            $image->save();
+        }
+        return redirect()->route('news.index');
+    }        
 
     /**
      * Display the specified resource.
@@ -44,7 +61,7 @@ class NewsController extends Controller
      */
     public function edit(News $news)
     {
-        //
+        
     }
 
     /**

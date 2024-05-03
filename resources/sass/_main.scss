@@ -16,7 +16,7 @@
 .radius{
     border-radius: 24px;
 }
-.btn-purple{
+.btn-border{
     border-color: #717CFF;
 
 }
@@ -33,7 +33,7 @@
     font-size: 55px;
 }
 .bg-card{
-    background: rgba(53, 57, 65, 0.41)!important;
+    background: rgb(255, 255, 255)!important;
 }
 .icons .fa-heart{
     cursor: pointer;
@@ -44,16 +44,12 @@
 .header-description{
     font-size: 20px;
 }
-.swiper-pagination{
-    background-color: white;
 
-}
-.like-button{
-    cursor: pointer;
-}
-.collections .images img{
+
+.news .images img{
     height: 25dvh;
     object-fit: cover;
+    
 }
 @media screen and (max-width: 992px) {
     .bg-site-image{
@@ -64,3 +60,24 @@
         font-size: 40px;
     }
 }
+
+.header-description-1{
+    border-radius: 4px;
+    background: #FFF;
+    
+    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.08);
+}
+
+.icon-space {
+    margin-right: 10px; 
+}
+.bg-gray{
+    background-color: #E6E5E5;
+}
+
+.btn-purple {
+    background-color: #717CFF;
+    border-color: #717CFF;
+    color: white; 
+  }
+  

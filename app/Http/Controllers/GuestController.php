@@ -4,11 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\View\View;
+use App\Models\News;
+
 
 class GuestController extends Controller
 {
     public function index():View
     {
-        return view('index');
+        $news = News::limit(4)->get();
+        return view('guest.index', ['news' => $news]);
     }
 }
