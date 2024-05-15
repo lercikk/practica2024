@@ -61,7 +61,7 @@ class NewsController extends Controller
      */
     public function edit(News $news)
     {
-        
+        return view('news.edit', compact('news'));
     }
 
     /**
@@ -69,7 +69,8 @@ class NewsController extends Controller
      */
     public function update(Request $request, News $news)
     {
-        //
+        $news->update($request->all());
+        return redirect()->route('news.index');
     }
 
     /**
@@ -77,6 +78,8 @@ class NewsController extends Controller
      */
     public function destroy(News $news)
     {
-        //
+
+        $news->delete();
+        return redirect()->route('news.index');
     }
 }

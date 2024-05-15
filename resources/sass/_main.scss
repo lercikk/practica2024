@@ -60,13 +60,27 @@
         font-size: 40px;
     }
 }
-
-.header-description-1{
-    border-radius: 4px;
-    background: #FFF;
-    
-    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.08);
+.nav-link {
+    position: relative;
 }
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+    background-color: #717CFF; 
+}
+
+
 
 .icon-space {
     margin-right: 10px; 
@@ -81,3 +95,35 @@
     color: white; 
   }
   
+
+// circle-icon
+.circle-icon-violet{
+    background-color: #717CFF;
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%;
+}
+.circle-icon-red{
+    background-color: #FF5959;
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%;
+}
+.circle-icon-blue{
+    background-color: #5C96FF;
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%;
+}
+.circle-icon-pink{
+    background-color: #FA706C;
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%;
+}
+.circle-icon-green{
+    background-color: #90EE90;
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%;
+}

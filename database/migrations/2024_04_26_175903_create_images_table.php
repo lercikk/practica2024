@@ -13,14 +13,12 @@ return new class extends Migration
     {
         Schema::create('images', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
             $table->unsignedBigInteger('news_id'); 
-            $table->foreign('news_id')->references('id')->on('news'); 
+            $table->foreign('news_id')->references('id')->on('news')->onDelete('cascade'); 
+            $table->string('name');
             $table->timestamps();
         });
     }
-    
-
 
     /**
      * Reverse the migrations.
