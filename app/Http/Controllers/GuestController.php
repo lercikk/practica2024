@@ -11,7 +11,7 @@ class GuestController extends Controller
 {
     public function index():View
     {
-        $news = News::limit(4)->get();
+        $news = News::limit(6)->get();
         return view('guest.index', ['news' => $news]);
     }
 }

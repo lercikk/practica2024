@@ -1,24 +1,6 @@
-.text-site-light{
-    color: #717CFF!important;
-}
-.btn-bg-light{
-    background:  #717CFF;
-}
-.btn-bg-dark{
-    background: #030812;
-}
-.btn-bg-secondary{
-    background: #3C485D;
-}
-.btn-radius{
-    border-radius: 24px;
-}
-.radius{
-    border-radius: 24px;
-}
+
 .btn-border{
     border-color: #717CFF;
-
 }
 .text-site-gradient{
     color: #717CFF!important;
@@ -29,9 +11,7 @@
     background-repeat: no-repeat;
     background-position: right;
 }
-.title h2{
-    font-size: 55px;
-}
+
 .bg-card{
     background: rgb(255, 255, 255)!important;
 }
@@ -53,11 +33,19 @@
 }
 @media screen and (max-width: 992px) {
     .bg-site-image{
-        background-size: 100%;
-        background-position: top;
+        background-size: 70%;
+        background-position: right;
     }
     .title h2{
         font-size: 40px;
+    }
+    .logo{
+        width: 100px; 
+        height: auto; 
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
     }
 }
 .nav-link {
@@ -94,7 +82,6 @@
     border-color: #717CFF;
     color: white; 
   }
-  
 
 // circle-icon
 .circle-icon-violet{
@@ -126,4 +113,20 @@
     width: 80px; 
     height: 80px; 
     border-radius: 50%;
+}
+.learn-more {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #007bff; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.learn-more i {
+    margin-left: 0.5rem;
+    transition: transform 0.2s;
+}
+
+.learn-more:hover i {
+    transform: translateX(5px); 
 }
