@@ -7,6 +7,8 @@
 }
 .bg-site-image{
     height: 90dvh;
+    background-size: 40%;
+
     background-image: url("../images/Image.png");
     background-repeat: no-repeat;
     background-position: right;
@@ -18,13 +20,25 @@
 .icons .fa-heart{
     cursor: pointer;
 }
-.header-title{
-    font-size: 48px;
-}
-.header-description{
-    font-size: 20px;
+.header-title {
+    font-size: 75px;
+    font-weight: bold; 
+    
 }
 
+.header-description{
+    font-size: 19px;
+
+}
+.section-description{
+    font-size: 22px;
+}
+.text-bold {
+    font-weight: bold; 
+}
+.text-gray {
+    color: #373737; 
+}
 
 .news .images img{
     height: 25dvh;
@@ -33,11 +47,11 @@
 }
 @media screen and (max-width: 992px) {
     .bg-site-image{
-        background-size: 70%;
+        background-size: 90%;
         background-position: right;
     }
-    .title h2{
-        font-size: 40px;
+    .header-title{
+        font-size: 30px;
     }
     .logo{
         width: 100px; 
@@ -47,6 +61,10 @@
         left: 10px;
 
     }
+    .header-description{
+        font-size: 20px;
+    }
+   
 }
 .nav-link {
     position: relative;
@@ -68,11 +86,15 @@
     background-color: #717CFF; 
 }
 
-
-
 .icon-space {
-    margin-right: 10px; 
+    margin: 0 10px; 
 }
+
+.fa-brands-icon a i {
+    font-size: 25px; 
+    color: #262626;
+}
+
 .bg-gray{
     background-color: #E6E5E5;
 }
@@ -81,7 +103,16 @@
     background-color: #717CFF;
     border-color: #717CFF;
     color: white; 
+    font-size: 19px;
   }
+  .btn-purple i {
+    margin-left: 0.5rem;
+    transition: transform 0.2s;
+}
+
+.btn-purple:hover i {
+    transform: translateX(5px); 
+}
 
 // circle-icon
 .circle-icon-violet{
@@ -117,7 +148,7 @@
 .learn-more {
     display: inline-block;
     margin-top: 1rem;
-    color: #007bff; 
+    color: #717CFF; 
     text-decoration: none;
     font-weight: bold;
 }
@@ -129,4 +160,14 @@
 
 .learn-more:hover i {
     transform: translateX(5px); 
+}
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
 }
