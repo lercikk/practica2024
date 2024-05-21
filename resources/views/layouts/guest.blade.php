@@ -11,15 +11,14 @@
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-
-
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-  
-
     @yield('content')
 
-    <footer class="mt-5 p-5 text-dark d-flex align-center justify-content-center bg-card">
+    <footer class=" text-dark d-flex align-center justify-content-center ">
         <p class="my-5">
             &copy; {{ \Carbon\Carbon::now()->year }} Toate drepturile rezervate
         </p>

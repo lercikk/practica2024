@@ -118,7 +118,7 @@
             <div class="card bg-card border-0 shadow">
                 <div class="card-body ">
                 <div class="circle-icon-red text-gray d-flex align-items-center justify-content-center mb-5 ">
-                <i class="fa-solid fa-book" style="font-size: 2rem;"></i>
+                <i class="fa-solid fa-book-bookmark" style="font-size: 2rem;"></i>
                 </div>
                     <h5 class="text-gray mt-3">University Admissions</h5>
                     <p class="text-secondary">Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. 
@@ -187,31 +187,75 @@
 <!-- News -->
 <section class="news my-5 py-5 bg-gray">
   <h2 class="text-gray text-center mb-5 text-bold">News</h2>
-  <p class="text-secondary text-center mb-5  section-description">Sunt autem nusquam hoc epicurus in gravissimo bello animadversionis metu degendae <br>
-     praesidia firmissima. Torquatos nostros? quos tu paulo ante cum teneam sententiam, quid bonum esse vult.</p>
-  
-    
-  <div class="container">
-  <div class="row">
-      @foreach($news as $new)
-      <div class="col-md-4">
-        <div class="card" style="width: 20rem;">
-          <div class="d-flex images">
-            @foreach($new->images()->limit(1)->get() as $image)
-              <img src="{{ asset(env('UPLOADS_IMAGE') . "/" . $image->name) }}" class="w-65  ">
-            @endforeach
-          </div>
-            <div class="card-body">
-                  <p class="text-secondary "><i class="fa-regular fa-calendar"></i>  {{ $new->created_at->format('F j, Y') }}</p>
-                  <h5 class="text-black mb-0">{{ $new->description }}</h5>
-            </div>
-          
-        </div>
-    </div>
-    @endforeach
-    
-</section>
+  <p class="text-secondary text-center mb-5  section-description">
+    Sunt autem nusquam hoc epicurus in gravissimo bello animadversionis metu degendae <br>
+    praesidia firmissima. Torquatos nostros? quos tu paulo ante cum teneam sententiam, quid bonum esse vult. <br>
+  </p>
 
-<div class="d-flex justify-content-center ">
+  <div id="newsCarousel" class="carousel slide">
+    <div class="carousel-inner container">
+      @foreach($news->chunk(3) as $index => $newsChunk)
+      <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
+        <div class="row">
+          @foreach($newsChunk as $new)
+          <div class="col-md-4">
+            <div class="card " style="width: 18rem; margin: auto;">
+              <div class="d-flex images">
+                @foreach($new->images()->limit(1)->get() as $image)
+                  <img src="{{ asset(env('UPLOADS_IMAGE') . '/' . $image->name) }}" class="w-100">
+                @endforeach
+              </div>
+              <div class="card-body">
+                <p class="text-secondary"><i class="fa-regular fa-calendar"></i> {{ $new->created_at->format('F j, Y') }}</p>
+                <h5 class="text-black mb-0">{{ $new->description }}</h5>
+              </div>
+            </div>
+          </div>
+          @endforeach
+        </div>
+      </div>
+      @endforeach
+    </div>
+    
+    <button class="carousel-control-prev " type="button " data-bs-target="#newsCarousel" data-bs-slide="prev">
+    <i class="fa-solid fa-arrow-left text-gray d-flex align-items-center justify-content-center mb-5" aria-hidden="true"></i>
+      <span class="visually-hidden ">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+    <i class="fa-solid fa-arrow-right text-gray d-flex align-items-center justify-content-center mb-5 " aria-hidden="true"></i>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="d-flex justify-content-center mt-5">
   <button type="button" class="btn btn-purple px-4 py-2 me-3">Join Here <i class="fa-solid fa-arrow-right"></i></button>
 </div>
+
+</section>
+
+<script>
+$(document).ready(function() {
+  $('#newsCarousel').on('slide.bs.carousel', function (e) {
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 3;
+    var totalItems = $('.carousel-item').length;
+
+    if (idx >= totalItems - (itemsPerSlide - 1)) {
+      var it = itemsPerSlide - (totalItems - idx);
+      for (var i = 0; i < it; i++) {
+        // append slides to end
+        if (e.direction === "left") {
+          $('.carousel-item').eq(i).appendTo('.carousel-inner');
+        }
+        else {
+          $('.carousel-item').eq(0).appendTo('.carousel-inner');
+        }
+      }
+    }
+  });
+});
+</script>
+
+
+
