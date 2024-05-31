@@ -11,11 +11,11 @@ class News extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'name',
+        'title', // Adăugăm câmpul pentru titlu
         'description',
         'image'
-        
     ];
+    
 
     public function images(): HasMany
     {

@@ -2,8 +2,6 @@
 
 @section('title', 'News')
 
-
-
 @section('content')
 <div class="container">
         <h2>Edit</h2>
@@ -11,8 +9,12 @@
             @csrf
             @method('PUT')
             <div class="mb-3">
-                <label for="description" class="form-label">Description</label>
-                <input type="text" name="description" id="description" class="form-control" value="{{ $news->description }}"> 
+                <label for="title" class="form-label">Title</label> 
+                <input type="text" name="title" id="title" class="form-control" value="{{ $news->title }}"> 
+            </div>
+            <div class="mb-3">
+                <label for="new_description" class="form-label">Description</label> 
+                <input type="text" name="new_description" id="new_description" class="form-control" value="{{ $news->description }}"> 
             </div>
             <div class="mb-3">
                 <label for="images" class="form-label">Images</label>
@@ -22,10 +24,6 @@
         </form>
     </div>
 @endsection
-
-
-   
-       
 
 @section('css')
 

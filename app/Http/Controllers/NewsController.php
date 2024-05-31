@@ -33,6 +33,7 @@ class NewsController extends Controller
     public function store(Request $request)
     {
         $new = new News();
+        $new->title = $request->title; 
         $new->description = $request->description;
         $new->user_id = auth()->id();
         $new->save();
@@ -53,7 +54,7 @@ class NewsController extends Controller
      */
     public function show(News $news)
     {
-        //
+        
     }
 
     /**

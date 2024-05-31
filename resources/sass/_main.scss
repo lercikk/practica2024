@@ -89,6 +89,7 @@
     font-size: 25px; 
     color: #262626;
 }
+
 .bg-gray{
     background-color: #FAFAFA;
 }
@@ -166,4 +167,26 @@
   .carousel-control-next i {
     font-size: 24px; 
   }
-  
+//button pagina country
+.btn-custom {
+    background-color: #717CFF;
+    border-color: #717CFF;
+    color: white;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #5a63e0;
+    border-color: #5a63e0;
+    transform: scale(1.05);
+}
+
+.btn-custom:active {
+    background-color: #434bc4;
+    border-color: #434bc4;
+}
+
+.btn-custom:focus {
+    box-shadow: 0 0 0 0.2rem rgba(113, 124, 255, 0.5);
+}
+
