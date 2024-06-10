@@ -57,45 +57,88 @@
 </script>
 
 <div class="container mt-5">
+    <div class="text-center mb-5">
+        <img src="{{ asset('assets/images/img.jpg') }}" alt="Our services" class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+    </div>
     <div class="row justify-content-center">
         <div class="col-md-10">
-            <div class="text-center mb-5">
-                <h1 class="display-4">Responsibilities</h1>
-            </div>
+           
             <div class="row">
                 <div class="col-md-6">
                     <div class="responsibilities-text">
-                        <h4>Commitment to Excellence</h4>
-                        <p class="text-secondary">At Executive Study Abroad, we hold ourselves to the highest standards of excellence. Our primary responsibility is to ensure that every student receives the best possible guidance and support throughout their educational journey. We are committed to providing accurate, up-to-date information and personalized advice tailored to each student's unique goals and aspirations.</p>
+                        <h4>Responsibilities</h4>
+                        <p class="text-secondary">Provide comprehensive information to students and their guardians regarding universities in Australia.</p>
 
-                        <h4>Ethical Practices</h4>
-                        <p class="text-secondary">Integrity and transparency are at the core of our operations. We are dedicated to maintaining ethical practices in all our interactions with students, educational institutions, and partners. We ensure that all our advice and recommendations are unbiased, honest, and in the best interest of the students we serve.</p>
+                        <p class="text-secondary">Prepare and submit applications for admission to partner universities, managing all necessary formalities with university admission offices.</p>
 
-                        <h4>Student Support</h4>
-                        <p class="text-secondary">We take our role as mentors and advisors seriously. Our responsibility is to support students from the moment they contact us until they achieve their educational and career goals. This includes providing comprehensive counseling, helping with application processes, and offering continuous support during their studies abroad.</p>
+                        <p class="text-secondary">Offer thorough assistance throughout the documentation and student visa processing procedures.</p>
 
-                        <h4>Cultural Sensitivity</h4>
-                        <p class="text-secondary">Understanding and respecting cultural diversity is a fundamental responsibility at Executive Study Abroad. We strive to create an inclusive environment where students from all backgrounds feel welcomed and valued. We provide cultural orientation sessions to help students adapt to new environments and foster cross-cultural understanding.</p>
+                        <p class="text-secondary">Collaborate within a team to ensure exceptional client service delivery.</p>
+
+                        <p class="text-secondary">Maintain regular communication with assigned client groups.</p>
+
+                        <p class="text-secondary">Report to the account manager on a regular basis.</p>
+                       
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="responsibilities-text">
-                        <h4>Collaboration with Educational Institutions</h4>
-                        <p class="text-secondary">We maintain strong partnerships with a wide range of educational institutions worldwide. Our responsibility is to facilitate smooth communication and collaboration between students and these institutions, ensuring that students have access to the best educational opportunities available.</p>
+                        <h4>Requirements</h4>
+                        <p class="text-secondary">Education: Minimum Bachelor's degree or higher (candidates with foreign degrees will be given preference).</p>
 
-                        <h4>Continuous Improvement</h4>
-                        <p class="text-secondary">In our quest to provide the best services, we constantly seek to improve our processes and offerings. We are committed to professional development, staying informed about the latest trends in international education, and adopting innovative practices to enhance our services.</p>
+                        <p class="text-secondary">Excellent oral and written communication skills in English.</p>
 
-                        <h4>Environmental Responsibility</h4>
-                        <p class="text-secondary">We recognize the importance of sustainability and are committed to reducing our environmental impact. We incorporate eco-friendly practices into our operations and encourage students and partners to consider the environmental implications of their actions.</p>
+                        <p class="text-secondary">Pleasant personality with outstanding communication skills.</p>
 
-                        <h4>Community Engagement</h4>
-                        <p class="text-secondary">We believe in giving back to the community. Executive Study Abroad is actively involved in various community initiatives and encourages students to engage in volunteer work and social projects that make a positive impact.</p>
+                        <p class="text-secondary">Demonstrated traits of politeness, patience, honesty, and loyalty to work.</p>
 
-                        <h4>Accountability</h4>
-                        <p class="text-secondary">We are accountable to our students, their families, and our partners. We take responsibility for our actions and decisions, and we are always open to feedback to ensure we are meeting the needs and expectations of those we serve.</p>
                     </div>
                 </div>
+                
+            </div>
+            <div class="interactive-section mt-5">
+                <h4 class="text-center mb-4">Discover More About Our Responsibilities</h4>
+                <div class="accordion" id="responsibilitiesAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Comprehensive Information
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#responsibilitiesAccordion">
+                            <div class="accordion-body">
+                                We ensure that students and their guardians receive detailed and accurate information about various universities, programs, and application processes.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Application Preparation
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#responsibilitiesAccordion">
+                            <div class="accordion-body">
+                                Our team assists in preparing and submitting applications, ensuring all formalities are completed efficiently and correctly.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Visa Processing
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#responsibilitiesAccordion">
+                            <div class="accordion-body">
+                                We provide comprehensive support throughout the visa application process, ensuring students meet all requirements and deadlines.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4" data-aos="fade-up">
+                <p class="lead">We are dedicated to guiding you through every step of your educational journey, ensuring you have all the support you need to succeed.</p>
             </div>
         </div>
     </div>

@@ -50,24 +50,35 @@
                 <h1 class="display-4 text-site-gradient">Welcome to Executive Study Abroad</h1>
                 <p class="lead">A trusted destination for those who aspire to study abroad and develop their educational and professional prospects. Founded with a vision to open doors to global opportunities for young people from Moldova, Executive Study Abroad offers high-quality educational programs and personalized support for students.</p>
             </div>
-            <div class="values">
+            <div class="row bg-gray">
+
+            <div class="col-md-6 ">
+            <h2 class="text-gray">22 Years of Proven Excellence</h2>
+            <p class="lead mb-5">Since 2001, Executive Trade International has been inspiring students to excel in their higher education aspirations by helping them choose the right university abroad. </p>
+            <p class="lead mb-5 " data-aos="fade-up">Being an award-winning education consultant, we are the official representative in Bangladesh for a wide range of well-reputed universities in Australia, Canada, Malaysia, UK and USA.</p>
+        </div>
+        <div class="col-md-6 text-center mb-5">
+        <img src="{{ asset('assets/images/about.jpg') }}" alt="Study Abroad" style="height: 400px; width: auto;">
+        </div>
+            </div>
+            <div class="values ">
                 <div class="row">
                     <div class="col-md-6" data-aos="fade-right">
-                        <h3 class="text-site-gradient">Excellence</h3>
+                        <h3 class="text-gray">Excellence</h3>
                         <p class="text-secondary">We are committed to providing high-quality services and exceeding our clients' expectations in every aspect of our operations.</p>
                     </div>
                     <div class="col-md-6" data-aos="fade-left">
-                        <h3 class="text-site-gradient">Integrity</h3>
+                        <h3 class="text-gray">Integrity</h3>
                         <p class="text-secondary">We always adhere to the highest ethical standards and act with honesty and transparency in all our interactions.</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6" data-aos="fade-right">
-                        <h3 class="text-site-gradient">Innovation</h3>
+                        <h3 class="text-gray">Innovation</h3>
                         <p class="text-secondary">We are innovation-driven and constantly seek new ways to improve and adapt to the changing needs and requirements of the market.</p>
                     </div>
                     <div class="col-md-6" data-aos="fade-left">
-                        <h3 class="text-site-gradient">Commitment</h3>
+                        <h3 class="text-gray">Commitment</h3>
                         <p class="text-secondary">We are dedicated to supporting the success and well-being of our students, providing them with the support and resources they need to achieve their academic and professional goals.</p>
                     </div>
                 </div>

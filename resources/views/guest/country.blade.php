@@ -55,41 +55,73 @@
         navbarCollapse.classList.toggle('show');
     });
 </script>
-<div class="container mt-5">
-    <div class="text-center mb-4">
-        <img src="{{ asset('assets/images/country.png') }}" alt="Country" class="img">
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <h2 class="mt-5 text-site-gradient " >Contact Us</h2>
-            <form action="{{ route('contact.submit') }}" method="POST">
-                @csrf
-                <div class="mb-3">
-                    <label for="name" class="form-label" >Name</label>
-                    <input type="text" class="form-control"  id="name" name="name" required>
+<section class="news my-5 py-5 bg-gray">
+    <h2 class="text-gray text-center mb-5 text-bold">Country</h2>
+    <p class="text-secondary text-center mb-5 section-description" data-aos="fade-up">
+        Executive Trade International is a University Application Centre, guiding Moldovan
+        students to Australian, British, Canadian, and Irish universities!
+    </p>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+                <div class="card bg-card border-0 shadow">
+                    <div class="card-body">
+                        <img src="{{ asset('assets/images/austria.png') }}" alt="Study in Austria" class="img-fluid">
+                        <h5 class="text-gray mt-3">Study in Austria</h5>
+                        <p class="text-secondary">Explore top universities and exceptional educational opportunities in Austria.</p>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label" >Email</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label" >Message</label>
-                    <textarea class="form-control" id="message"  name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-custom" >Send Message</button>
-            </form>
-        </div>
-        <div class="col-md-6">
-            <h2 class="mt-5 text-site-gradient" >Location</h2>
-            <p><i class="fa-solid fa-house fa-bounce text-site-gradient" ></i> <strong class="text-site-gradient" >36, Dunării Cahul 3909<br>
-            <i class="fa-solid fa-globe fa-bounce "></i> Republica Moldova</strong></p>
+            </div>
 
-            <h2 class="mt-5 text-site-gradient" data-aos="fade-up">Contact</h2>
-            <p class="text-secondary" data-aos="fade-up">For any questions or assistance, please do not hesitate to contact:</p>
-            <p><i class="fa-solid fa-phone fa-bounce text-site-gradient" data-aos="fade-up"></i> <strong class="text-site-gradient" data-aos="fade-up">Phone: +373 1234 5678<br>
-            <i class="fa-solid fa-envelope fa-bounce"></i> Email: info@executivestudyabroadcahul.md</strong></p>
-            <p class="text-secondary" data-aos="fade-up">Our dedicated team is available to provide support and additional information about our study abroad programs and how we can help you achieve your academic and professional goals.</p>
-            <p class="text-secondary"data-aos="fade-up">We look forward to welcoming you to Cahul, where we will open doors to new educational and cultural opportunities!</p>
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+                <div class="card bg-card border-0 shadow">
+                    <div class="card-body">
+                        <img src="{{ asset('assets/images/canada.png') }}" alt="Study in Canada" class="img-fluid">
+                        <h5 class="text-gray mt-3">Study in Canada</h5>
+                        <p class="text-secondary">Discover a world-class education system and vibrant cultural life in Canada.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+                <div class="card bg-card border-0 shadow">
+                    <div class="card-body">
+                        <img src="{{ asset('assets/images/uk.png') }}" alt="Study in UK" class="img-fluid">
+                        <h5 class="text-gray mt-3">Study in UK</h5>
+                        <p class="text-secondary">Benefit from prestigious universities and rich historical heritage in the UK.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+                <div class="card bg-card border-0 shadow">
+                    <div class="card-body">
+                        <img src="{{ asset('assets/images/malaysia.png') }}" alt="Study in Malaysia" class="img-fluid">
+                        <h5 class="text-gray mt-3">Study in Malaysia</h5>
+                        <p class="text-secondary">Experience high-quality education and multicultural diversity in Malaysia.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+                <div class="card bg-card border-0 shadow">
+                    <div class="card-body">
+                        <img src="{{ asset('assets/images/usa.png') }}" alt="Study in USA" class="img-fluid">
+                        <h5 class="text-gray mt-3">Study in USA</h5>
+                        <p class="text-secondary">Enjoy cutting-edge research facilities and a dynamic academic environment in the USA.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+                <div class="card bg-card border-0 shadow">
+                    <div class="card-body">
+                        <img src="{{ asset('assets/images/ireland.png') }}" alt="Study in Ireland" class="img-fluid">
+                        <h5 class="text-gray mt-3">Study in Ireland</h5>
+                        <p class="text-secondary">Immerse yourself in Ireland's rich cultural traditions and outstanding education.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section>

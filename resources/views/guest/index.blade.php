@@ -3,9 +3,6 @@
 @section('content')
 <!-- Header -->
 <div class="container">
-        <a href="{{ route('login') }}" class="btn btn-outline-dark">Login</a>
-        <a href="{{ route('register') }}" class="btn btn-outline-dark">Register</a>
-
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ route('guest.index') }}">
@@ -83,6 +80,9 @@
                     
                     Apply Online <i class="fa-solid fa-arrow-right"></i>
                 </a>
+
+                <a href="{{ route('login') }}" class="btn ">Login</a>
+        <a href="{{ route('register') }}" class="btn">Register</a>
             </div>
             <div class="fa-brands-icon justify-content-center justify-content-lg-start " >
                    <a href="https://www.facebook.com/valeria.sinigur.1?locale=ru_RU" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
