@@ -59,41 +59,38 @@
 
 
 <header>
-<div class="d-flex align-items-center bg-site-image mb-5">
-<div class="container  align-items-center">
-
-        <div class="col-lg-6">
-            <h1 class=" text-center text-lg-start text-gray mb-4 header-title">
-            We Help to 
-            <span class="text-site-gradient">Build</span> <br>
-            Your Dream 
-            </h1>
-            <p class="text-secondary mb-4  header-description ">
-            We are  always availed to consult on taking your higher education to the next <br>
-
-             level so you can stay competitive in the global world. We welcome the <br>
-
-             opportunity to work with you "today" for "tomorrow's" better career solutions. <br>
-            </p>
-            <div class=" justify-content-center justify-content-lg-start mb-5">
-                <a href="#" class="btn btn-purple px-4 py-2 me-3">
-                    
-                    Apply Online <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-                <a href="{{ route('login') }}" class="btn ">Login</a>
-        <a href="{{ route('register') }}" class="btn">Register</a>
-            </div>
-            <div class="fa-brands-icon justify-content-center justify-content-lg-start " >
-                   <a href="https://www.facebook.com/valeria.sinigur.1?locale=ru_RU" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                   <span class="icon-space"></span>
-                   <a href="https://twitter.com/?lang=rur" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                   <span class="icon-space"></span>
-                   <a href="https://www.instagram.com/_georgiyevna/?next=%2F" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <div class="d-flex align-items-center bg-site-image mb-5">
+        <div class="container align-items-center">
+            <div class="col-lg-6">
+                <h1 class="text-center text-lg-start text-gray mb-4 header-title">
+                    We Help to 
+                    <span class="text-site-gradient">Build</span> <br>
+                    Your Dream 
+                </h1>
+                <p class="text-secondary mb-4 header-description">
+                    We are always availed to consult on taking your higher education to the next <br>
+                    level so you can stay competitive in the global world. We welcome the <br>
+                    opportunity to work with you "today" for "tomorrow's" better career solutions. <br>
+                </p>
+                <div class="justify-content-center justify-content-lg-start mb-5">
+                    <a href="{{ route('guest.apply') }}" class="btn btn-purple px-4 py-2 me-3">
+                        Apply Online <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="{{ route('login') }}" class="btn">Login</a>
+                    <a href="{{ route('register') }}" class="btn">Register</a>
+                </div>
+                <div class="fa-brands-icon justify-content-center justify-content-lg-start">
+                    <a href="https://www.facebook.com/valeria.sinigur.1?locale=ru_RU" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <span class="icon-space"></span>
+                    <a href="https://twitter.com/?lang=rur" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <span class="icon-space"></span>
+                    <a href="https://www.instagram.com/_georgiyevna/?next=%2F" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
         </div>
     </div>
 </header>
+
 <!-- End Header -->
 
 <!-- Section 2 -->
@@ -211,7 +208,8 @@
 </div>
 
   <div class="d-flex justify-content-center mt-5">
-  <button type="button" class="btn btn-purple px-4 py-2 me-3">Join Here <i class="fa-solid fa-arrow-right"></i></button>
+    <a href="{{ route('guest.apply') }}">
+  <button type="button" class="btn btn-purple px-4 py-2 me-3">Join Here <i class="fa-solid fa-arrow-right"></i></button></a>
 </div>
 
 </section>

@@ -41,27 +41,21 @@
     object-fit: cover;
     
 }
-@media screen and (max-width: 992px) {
-    .bg-site-image{
-        background-size: 90%;
-        background-position: right;
-    }
-    .header-title{
-        font-size: 30px;
-    }
-    .logo{
-        width: 100px; 
-        height: auto; 
-        position: absolute;
-        top: 10px;
-        left: 10px;
 
+@media screen and (max-width: 992px) {
+    .bg-site-image {
+        background-image: none; 
     }
-    .header-description{
-        font-size: 20px;
-    }
-   
+    
 }
+
+@media screen and (max-width: 576px) {
+    .header-title {
+        font-size: 50px;
+    }
+    
+}
+
 .nav-link {
     position: relative;
 }

@@ -58,7 +58,7 @@
             <p class="lead mb-5 " data-aos="fade-up">Being an award-winning education consultant, we are the official representative in Bangladesh for a wide range of well-reputed universities in Australia, Canada, Malaysia, UK and USA.</p>
         </div>
         <div class="col-md-6 text-center mb-5">
-        <img src="{{ asset('assets/images/about.jpg') }}" alt="Study Abroad" style="height: 400px; width: auto;">
+        <img src="{{ asset('assets/images/excellence.png') }}" alt="Study Abroad" style="height: 400px; width: auto;">
         </div>
             </div>
             <div class="values ">

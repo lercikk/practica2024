@@ -38,7 +38,11 @@
         </div>
     </nav>
 </div>
-<div class="container mt-5">
+
+<section class=" my-5 py-5 bg-gray">
+
+
+<div class="container mt-3">
 <h2 class="text-gray text-center mb-5 text-bold"data-aos="fade-up" >Services for Students</h2>
     <div class="text-center" >
         <img src="{{ asset('assets/images/banner.jpg') }}" alt="Our services" class="img-fluid w-100" style="height: 400px;  object-fit: cover;">
@@ -123,7 +127,7 @@
         </div>
     </div>
 </div>
-
+</section>
 @section('scripts')
 <script>
     function activateLink(element) {

@@ -66,6 +66,7 @@
             <div class="col-md-4 mb-4" data-aos="fade-up">
                 <div class="card bg-card border-0 shadow">
                     <div class="card-body">
+                        
                         <img src="{{ asset('assets/images/austria.png') }}" alt="Study in Austria" class="img-fluid">
                         <h5 class="text-gray mt-3">Study in Austria</h5>
                         <p class="text-secondary">Explore top universities and exceptional educational opportunities in Austria.</p>

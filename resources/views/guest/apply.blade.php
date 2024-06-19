@@ -55,13 +55,18 @@
         navbarCollapse.classList.toggle('show');
     });
 </script>
+<section class="my-5 py-5 bg-gray">
+    <div class="container mt-3">
+        <h2 class="text-gray text-center mb-5 text-bold" data-aos="fade-up">Get started with a free consultation today!</h2>
 
-<div class="container mt-5">
-<h2 class="text-gray text-center mb-5 text-bold"data-aos="fade-up" >Get started with a free consultation today!</h2>
-
-    <div class="text-center mb-4">
-        <img src="{{ asset('assets/images/country.png') }}" alt="Country" class="img">
-    </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card bg-card border-0 shadow">
+                    <div class="card-body p-0">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6671.1052633687505!2d28.19126598084531!3d45.89088306879642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b65c87aa8b8c59%3A0xed199321915a2ea8!2sIulia%20Ha%C8%99deu%20College!5e0!3m2!1sru!2s!4v1718796623503!5m2!1sru!2s"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
     <div class="row">
         <div class="col-md-6">
             <h2 class="mt-5 text-site-gradient " >Contact Us</h2>
@@ -97,3 +102,4 @@
     </div>
 </div>
 
+</section>

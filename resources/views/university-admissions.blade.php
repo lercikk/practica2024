@@ -52,40 +52,30 @@
         <div class="col-md-6" >
             <h4 >Discover Your Path</h4>
             <p class="text-secondary">At Executive Study Abroad, our career counselling services are designed to help you uncover your true potential and align your academic pursuits with your career aspirations. Whether you're a high school student exploring your options or a university graduate looking to pivot into a new field, our experienced counsellors are here to guide you every step of the way.</p>
-            <img src="{{ asset('assets/images/img2.png') }}" alt="Discover Your Path" >
         </div>
         <div class="col-md-6">
             <h4 >Personalized Guidance</h4>
             <p class="text-secondary">At Executive Study Abroad, our career counselling services are designed to help you uncover your true potential and align your academic pursuits with your career aspirations. Whether you're a high school student exploring your options or a university graduate looking to pivot into a new field, our experienced counsellors are here to guide you every step of the way.</p>
-            <img src="{{ asset('assets/images/img4.png') }}" alt="Personalized Guidance">
         </div>
     </div>
     <div class="row mb-5" data-aos="fade-up" >
         <div class="col-md-6">
             <h4 >Interactive Workshops</h4>
             <p class="text-secondary">At Executive Study Abroad, our career counselling services are designed to help you uncover your true potential and align your academic pursuits with your career aspirations. Whether you're a high school student exploring your options or a university graduate looking to pivot into a new field, our experienced counsellors are here to guide you every step of the way.</p>
-
-            <img src="{{ asset('assets/images/img4.png') }}" alt="Interactive Workshops" >
         </div>
         <div class="col-md-6">
             <h4 >Virtual Career Fairs</h4>
             <p class="text-secondary">At Executive Study Abroad, our career counselling services are designed to help you uncover your true potential and align your academic pursuits with your career aspirations. Whether you're a high school student exploring your options or a university graduate looking to pivot into a new field, our experienced counsellors are here to guide you every step of the way.</p>
-
-            <img src="{{ asset('assets/images/img2.png') }}" alt="Virtual Career Fairs">
         </div>
     </div>
     <div class="row mb-5" data-aos="fade-up" >
         <div class="col-md-6">
             <h4 >Success Stories</h4>
             <p class="text-secondary">At Executive Study Abroad, our career counselling services are designed to help you uncover your true potential and align your academic pursuits with your career aspirations. Whether you're a high school student exploring your options or a university graduate looking to pivot into a new field, our experienced counsellors are here to guide you every step of the way.</p>
-
-            <img src="{{ asset('assets/images/img2.png') }}" alt="Success Stories" >
         </div>
         <div class="col-md-6">
             <h4 >Resources and Tools</h4>
             <p class="text-secondary">At Executive Study Abroad, our career counselling services are designed to help you uncover your true potential and align your academic pursuits with your career aspirations. Whether you're a high school student exploring your options or a university graduate looking to pivot into a new field, our experienced counsellors are here to guide you every step of the way.</p>
-
-            <img src="{{ asset('assets/images/img4.png') }}" alt="Resources and Tools" >
         </div>
     </div>
 </div>

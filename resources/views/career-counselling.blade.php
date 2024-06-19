@@ -52,36 +52,30 @@
         <div class="col-md-6">
             <h4>Discover Your Path</h4>
             <p class="text-secondary">At Executive Study Abroad, our career counselling services are designed to help you uncover your true potential and align your academic pursuits with your career aspirations. Whether you're a high school student exploring your options or a university graduate looking to pivot into a new field, our experienced counsellors are here to guide you every step of the way.</p>
-            <img src="{{ asset('assets/images/img1.png') }}" alt="Discover Your Path" class="img-fluid">
         </div>
         <div class="col-md-6">
             <h4>Personalized Guidance</h4>
             <p class="text-secondary">Our counsellors provide personalized guidance to ensure that your educational journey aligns with your career goals. We offer one-on-one sessions to understand your strengths, interests, and aspirations.</p>
-            <img src="{{ asset('assets/images/img1.png') }}" alt="Personalized Guidance" class="img-fluid">
         </div>
     </div>
     <div class="row mb-5" data-aos="fade-up">
         <div class="col-md-6">
             <h4 >Interactive Workshops</h4>
             <p class="text-secondary">Participate in our interactive workshops that are designed to provide practical skills and insights into various career paths. These workshops are led by industry professionals and experienced educators.</p>
-            <img src="{{ asset('assets/images/img1.png') }}" alt="Interactive Workshops" class="img-fluid">
         </div>
         <div class="col-md-6">
             <h4 >Virtual Career Fairs</h4>
             <p class="text-secondary">Attend our virtual career fairs where you can connect with representatives from top universities and companies. This is a great opportunity to explore different career options and network with professionals.</p>
-            <img src="{{ asset('assets/images/img1.png') }}" alt="Virtual Career Fairs" class="img-fluid">
         </div>
     </div>
     <div class="row mb-5" data-aos="fade-up">
         <div class="col-md-6">
             <h4 >Success Stories</h4>
             <p class="text-secondary">Read inspiring success stories from our alumni who have successfully navigated their career paths with our guidance. Learn from their experiences and gain insights into achieving your own career goals.</p>
-            <img src="{{ asset('assets/images/img1.png') }}" alt="Success Stories" class="img-fluid">
         </div>
         <div class="col-md-6">
             <h4 >Resources and Tools</h4>
             <p class="text-secondary">Access a wealth of resources and tools that will aid you in your career planning. From resume building to interview preparation, we provide everything you need to succeed in your chosen field.</p>
-            <img src="{{ asset('assets/images/img1.png') }}" alt="Resources and Tools" class="img-fluid">
         </div>
     </div>
 </div>
